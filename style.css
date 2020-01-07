@@ -4,9 +4,8 @@ html {
 
 body {
 	font-family: Avenir, HelveticaNeue, "HelveticaNeue", Helvetica, Arial, sans-serif;
-	background-color: black;
-	opacity: 0.8;
 	margin: 0px;
+	background-color: #000;
 }
 
 h1 {
@@ -15,16 +14,22 @@ h1 {
 }
 
 h2 {
-	margin-top: -20px;
 	font-size: 20px;
 	font-weight: 400;
 }
 
+#top h2 {
+	margin-top: -20px;
+}
+
 h3 {
-	margin-top: 0px;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 200;
-	opacity: 0.5;
+	opacity: 0.8;
+}
+
+#top h3 {
+	margin-top: 0px;
 }
 
 a {
@@ -36,9 +41,9 @@ a {
 	color: #F9F9F9;
 
 	text-align: center;
-	padding: 50px 50px 0px 50px;
+	padding: 50px 50px 30px 50px;
 
-	background-color: black;
+	background-color: #222;
 }
 
 #coming-soon {
@@ -66,7 +71,7 @@ a {
 	padding-right: 100px;
 	padding-bottom: 10px;
 
-	background-color: #222;
+	background-color: #000;
 }
 
 #icon {
@@ -77,8 +82,20 @@ a {
 	float: center;
 }
 
+#icon-container {
+
+}
+
 #badge {
 	width: 175px;
+	height: 52px;
+}
+
+#testflight {
+	width: 175px;
+	height: 52px;
+
+	border-radius: 8px;
 }
 
 #screenshot {
@@ -91,4 +108,13 @@ a {
 	border-width: 1px;
 	border-color: #111;
 	border-style: solid;
+}
+
+#copyright {
+	margin-top: 100px;
+	opacity: 0.3;
+}
+
+#eula {
+	text-align: justify;
 }
