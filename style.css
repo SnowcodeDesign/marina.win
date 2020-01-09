@@ -14,13 +14,14 @@ h1 {
 }
 
 h2 {
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: 400;
 }
 
 #top h2 {
 	margin-top: -20px;
 }
+
 
 h3 {
 	font-size: 14px;
@@ -115,6 +116,6 @@ a {
 	opacity: 0.3;
 }
 
-#eula {
+#intro {
 	text-align: justify;
 }
