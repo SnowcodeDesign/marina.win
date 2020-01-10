@@ -78,7 +78,7 @@ a {
 	background-color: #000;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 	#bottom {
 		padding-left: 10px;
 		padding-right: 10px;
@@ -127,5 +127,5 @@ a {
 }
 
 #intro {
-	text-align: justify;
+	text-align: left;
 }
