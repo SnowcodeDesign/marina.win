@@ -31,7 +31,7 @@
 	
 	<div id="bottom">
 		<h1>Terms and Conditions</h1>
-		<h3 style="margin-top:-20px;">Last updated 13 Jan 2020</h3>
+		<h3 style="margin-top:-20px;">Last updated 12 Feb 2020</h3>
 
 		<div id="intro">
 			<p>Submarine Two is developed and maintained by Julian (<a href="https://twitter.com/insanj">@insanj</a>) Weiss. Any inquiries should be sent to <a href="mailto:submarineforios@gmail.com">submarineforios@gmail.com</a>.  All agreements are available online at <a href="http://submarineforios.com/legal.html">http://submarineforios.com/legal.html</a> as well as in the Submarine Two app.</p>
@@ -46,7 +46,18 @@
         <li>Yearly, named "Pro Mode (Yearly)", prived at $9.99 USD per year</li>
       </ul>
 
-      Purchasing either of these will remove the 5 item restriction on the Submarine Two Dock. Subscriptions automatically renew unless cancelled within 24 hours of current period end. Manage your plan in iTunes Account Settings after purchase. By purchasing Pro Mode, you are agreeing to the Licensed Applicaiton User License Agreement available at: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a>.</p>
+      <p>In version 2.0.0 of Submarine Two (the first published on the App Store) purchasing either of these will remove the 5 item restriction on the Submarine Two Dock. In version 2.1.0 of Submarine purchasing either of these will opt the user into Push Notifications. By doing this, the user is agreeing to allow Submarine Two to authenticate using its own servers and independently check the user's Reddit inbox for unread content. To provide this capability, the 3rd party services Heroku and OneSignal are used. Only if the user has signed up for Pro Mode will these services be used.</p>
+
+      <p>To revoke Submarine Two's access to your Reddit account, or prevent Heroku or OneSignal from being used in connection with your Reddit account or Apple device, you can revoke permission for Submarine Two to use your Reddit account in the Reddit settings at any time.</p>
+
+      <p>By purchasing Pro Mode, the user is agreeing to the End User Agreements and Privacy Policies for Heroku and OneSignal available as of 12 Feb 2020 here:
+      <ul>
+        <li>Heroku <a href="https://www.heroku.com/policy/salesforce-heroku-msa">https://www.heroku.com/policy/salesforce-heroku-msa</a></li> 
+        <li>OneSignal <a href="https://onesignal.com/tos">https://onesignal.com/tos</a></li>
+      </ul>
+      </p>
+
+      <p>Subscriptions automatically renew unless cancelled within 24 hours of current period end. Manage your plan in iTunes Account Settings after purchase. By purchasing Pro Mode, you are agreeing to the Licensed Applicaiton User License Agreement available at: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a>.</p>
     </div>
 
 
@@ -104,7 +115,14 @@
 
     	<li>Third Party Terms of Agreement</li>
       <div><ol type="a">
-        <li>The End-User must comply with applicable third party terms of agreement when using Submarine Two. These are provided at the top of the document as well as here: <a href="https://www.redditinc.com/policies/user-agreement">Reddit Terms of Agreement</a>.</li>
+        <li>The End-User must comply with applicable third party terms of agreement when using Submarine Two. These are provided at the top of the document as well as here:
+        <ul>
+          <li>Reddit <a href="https://www.redditinc.com/policies/user-agreement">https://www.redditinc.com/policies/user-agreement</a></li>
+          <li>Heroku <a href=
+            "https://www.heroku.com/policy/salesforce-heroku-msa">https://www.heroku.com/policy/salesforce-heroku-msa</a>
+          </li>
+          <li>OneSignal <a href="https://onesignal.com/tos">https://onesignal.com/tos</a></li>
+        </ul></li>
       </ol></div>
 
     	<li>Third Party Beneficiary</li>
@@ -114,7 +132,7 @@
 
       <li>Data Use and Sharing</li>
       <div><ol type="a">
-        <li>Submarine Two does not use, transmit, or share someone’s personal data without first obtaining the End-User's permission. All information about how data is collected and used is available in these Terms, particularly the Privacy Policy. No user data is collected or used surreptitiously. No third parties are used to facilitate the subscription service or Apple Pay within Submarine Two. No health, fitness, or medical data is used within Submarine Two.</li>
+        <li>Submarine Two does not use, transmit, or share someone’s personal data without first obtaining the End-User's permission. All information about how data is collected and used is available in these Terms, particularly the Privacy Policy. No user data is collected or used surreptitiously. No third parties are used to facilitate the subscription service or Apple Pay within Submarine Two. Heroku and OneSignal are the only 3rd parties used in Submarine Two, exclusively to securely facilitate Push Notifications. No health, fitness, or medical data is used within Submarine Two.</li>
       </ol></div>
 
       <li>Intellectual Property</li>
@@ -182,20 +200,20 @@
 			<li><b>Data Collection and Storage</b>
 				<ol>
 					<!--<h3>Identify what data, if any, the app/service collects, how it collects that data, and all uses of that data.</h3>-->
-					<li>Submarine Two does not collect or share user data with any 3rd parties or services besides Reddit. Submarine Two uses the Reddit OAuth API to authenticate Reddit accounts in order to allow voting and other actions through the app. <!--Once authenticated, the access token is secured in the iOS keychain. The username is saved locally outside of the keychain and used as a key to get the access token retrieved at the end of the OAuth process. The "hide" feature exclusively uses the Reddit API. The "mute" feature stores keywords and filters out posts locally, and thus does not send this information to Reddit. The "visited" feature stores tapped post information locally and does not send or receive this information from Reddit or any other service.--></li>
+					<li>Submarine Two does not collect or share user data with any 3rd parties or services besides Reddit, Heroku, and OneSignal. Submarine Two uses the Reddit OAuth API to authenticate Reddit accounts in order to allow voting and other actions through the app. Heroku and OneSignal are only used for Pro Mode users in order to support Push Notifications. Users that revoke Submarine Two's access to their Reddit account will no longer have any information transmitted to Heroku or OneSignal.</li>
 
 					<!--<h3>Confirm that any third party with whom an app shares user data (in compliance with these Guidelines) — such as analytics tools, advertising networks and third-party SDKs, as well as any parent, subsidiary or other related entities that will have access to user data — will provide the same or equal protection of user data as stated in the app’s privacy policy and required by these Guidelines.</h3>-->
-					<li>No analytics tools, advertising networks, or third-party SDKs are used in Submarine Two.</li>
+					<li>No analytics tools, advertising networks are used in Submarine Two. The OneSignal 3rd Party SDK is used to support Push Notifications in Submarine Two.</li>
 
 					<!--<h3>Explain its data retention/deletion policies and describe how a user can revoke consent and/or request deletion of the user’s data.</h3>-->
-					<li>User data is only saved locally in Submarine Two and can be erased by signing out inside the app or deleting the app. Permission to use the Reddit API can be revoked via Reddit anytime at: <a href="https://www.reddit.com/prefs/apps/">https://www.reddit.com/prefs/apps/</a>.</li>
+					<li>User data is saved locally in Submarine Two and can be erased by signing out inside the app or deleting the app. Permission to use the Reddit API can be revoked via Reddit anytime at: <a href="https://www.reddit.com/prefs/apps/">https://www.reddit.com/prefs/apps/</a>. Revoking permission will also prevent Submarine Two from accessing your account or contacting your iOS device using Heroku and OneSignal. Minimal user information is stored and accessed using Heroku to securely check Reddit content and send Push Notifications.</li>
 				</ol></li>
 			</li>
 
 			<li><b>Permission</b>
 				<ol>
 					<!--<h3>Apps that collect user or usage data must secure user consent for the collection, even if such data is considered to be anonymous at the time of or immediately following collection. Paid functionality must not be dependent on or require a user to grant access to this data. Apps must also provide the customer with an easily accessible and understandable way to withdraw consent. Ensure your purpose strings clearly and completely describe your use of the data. Apps that collect data for a legitimate interest without consent by relying on the terms of the European Union’s General Data Protection Regulation (“GDPR”) or similar statute must comply with all terms of that law.</h3>-->
-					<li>You (the End-User) consent to the collection of data as explained in the Data Collection and Storage section above. To opt-out of any user data being transmitted, do not sign into a Reddit account when using Submarine Two.</li>
+					<li>You (the End-User) consent to the collection of data as explained in the Data Collection and Storage section above. To opt-out of any user data being transmitted, do not sign into a Reddit account when using Submarine Two. To opt-out of Heroku and OneSignal use, do not sign up for Pro Mode.</li>
 				</ol></li>
 			</li>
 
